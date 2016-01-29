@@ -4,6 +4,7 @@ $if(fontfamily)$
 $else$
 \usepackage{lmodern}
 $endif$
+
 $if(linestretch)$
 \usepackage{setspace}
 \setstretch{$linestretch$}
@@ -210,6 +211,9 @@ $if(blockquote)$
 \renewenvironment{quote}{\begin{blockquote}\list{}{\rightmargin=0em\leftmargin=0em}%
 \item\relax\color{greytext}\ignorespaces}{\unskip\unskip\endlist\end{blockquote}}
 $endif$
+
+\setlength\topmargin{-96pt}
+\setlength\textheight{11in}
 
 \begin{document}
 
